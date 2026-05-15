@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 /// Design System Colors
 /// Paleta de cores consistente para o app SENN.AI Social
 
@@ -40,3 +41,4 @@ abstract class AppColors {
   static const Color overlay = Color(0x1A000000);
   static const Color overlayDark = Color(0x33FFFFFF);
 }
+

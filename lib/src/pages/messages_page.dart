@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
@@ -5,7 +6,7 @@ import 'dart:async';
 
 import '../app_state.dart';
 
-// Página principal de mensagens
+// PÃ¡gina principal de mensagens
 class MessagesPage extends StatefulWidget {
   const MessagesPage({super.key});
 
@@ -52,7 +53,7 @@ class _MessagesPageState extends State<MessagesPage> with AutomaticKeepAliveClie
           ),
           const SizedBox(height: 8),
           Text(
-            'Suas conversas aparecerão aqui',
+            'Suas conversas aparecerÃ£o aqui',
             style: TextStyle(
               fontSize: 14,
               color: Colors.grey[400],
@@ -142,7 +143,7 @@ class _MessagesPageState extends State<MessagesPage> with AutomaticKeepAliveClie
                 ],
               ),
               const SizedBox(width: 12),
-              // Informações da conversa
+              // InformaÃ§Ãµes da conversa
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -282,7 +283,7 @@ class _MessagesPageState extends State<MessagesPage> with AutomaticKeepAliveClie
                 ),
                 ListTile(
                   leading: const Icon(Icons.notifications_off_outlined),
-                  title: Text(conversation.isMuted ? 'Ativar notificações' : 'Silenciar'),
+                  title: Text(conversation.isMuted ? 'Ativar notificaÃ§Ãµes' : 'Silenciar'),
                   onTap: () {
                     context.read<AppState>().toggleMuteConversation(conversation.id);
                     Navigator.pop(context);
@@ -316,7 +317,7 @@ class _MessagesPageState extends State<MessagesPage> with AutomaticKeepAliveClie
                       context: context,
                       builder: (context) => AlertDialog(
                         title: const Text('Excluir conversa?'),
-                        content: const Text('Esta ação não pode ser desfeita.'),
+                        content: const Text('Esta aÃ§Ã£o nÃ£o pode ser desfeita.'),
                         actions: [
                           TextButton(
                             onPressed: () => Navigator.pop(context),
@@ -361,7 +362,7 @@ class _MessagesPageState extends State<MessagesPage> with AutomaticKeepAliveClie
   }
 }
 
-// Página de chat melhorada
+// PÃ¡gina de chat melhorada
 class ChatPage extends StatefulWidget {
   final String conversationId;
 
@@ -444,7 +445,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
     final state = context.watch<AppState>();
     final conversation = state.conversations.firstWhere(
       (item) => item.id == widget.conversationId,
-      orElse: () => throw Exception('Conversa não encontrada'),
+      orElse: () => throw Exception('Conversa nÃ£o encontrada'),
     );
 
     return GestureDetector(
@@ -541,7 +542,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
           icon: const Icon(Icons.videocam_outlined),
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Chamada de vídeo iniciando...')),
+              const SnackBar(content: Text('Chamada de vÃ­deo iniciando...')),
             );
           },
         ),
@@ -576,7 +577,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
                 children: [
                   Icon(Icons.photo_library_outlined),
                   SizedBox(width: 8),
-                  Text('Mídia'),
+                  Text('MÃ­dia'),
                 ],
               ),
             ),
@@ -586,7 +587,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
                 children: [
                   Icon(Icons.info_outline),
                   SizedBox(width: 8),
-                  Text('Informações'),
+                  Text('InformaÃ§Ãµes'),
                 ],
               ),
             ),
@@ -989,12 +990,12 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Reações rápidas
+                // ReaÃ§Ãµes rÃ¡pidas
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: ['👍', '❤️', '😂', '😮', '😢', '😡'].map((emoji) {
+                    children: ['ðŸ‘', 'â¤ï¸', 'ðŸ˜‚', 'ðŸ˜®', 'ðŸ˜¢', 'ðŸ˜¡'].map((emoji) {
                       return GestureDetector(
                         onTap: () {
                           context.read<AppState>().addReaction(
@@ -1024,7 +1025,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
                   leading: const Icon(Icons.content_copy),
                   title: const Text('Copiar'),
                   onTap: () {
-                    // Implementar cópia para clipboard
+                    // Implementar cÃ³pia para clipboard
                     Navigator.pop(context);
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text('Mensagem copiada!')),
@@ -1061,7 +1062,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
                       context: context,
                       builder: (context) => AlertDialog(
                         title: const Text('Excluir mensagem?'),
-                        content: const Text('Esta ação não pode ser desfeita.'),
+                        content: const Text('Esta aÃ§Ã£o nÃ£o pode ser desfeita.'),
                         actions: [
                           TextButton(
                             onPressed: () => Navigator.pop(context),
@@ -1106,7 +1107,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
                 _buildAttachmentOption(
                   icon: Icons.photo_camera,
                   color: Colors.purple,
-                  label: 'Câmera',
+                  label: 'CÃ¢mera',
                 ),
                 _buildAttachmentOption(
                   icon: Icons.photo_library,
@@ -1121,7 +1122,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
                 _buildAttachmentOption(
                   icon: Icons.location_on,
                   color: Colors.green,
-                  label: 'Localização',
+                  label: 'LocalizaÃ§Ã£o',
                 ),
                 _buildAttachmentOption(
                   icon: Icons.contact_phone,
@@ -1156,7 +1157,7 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
     context.read<AppState>().addReaction(
       widget.conversationId,
       message.id,
-      '❤️',
+      'â¤ï¸',
     );
   }
 
@@ -1192,13 +1193,13 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
 
   void _showMediaGallery() {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Galeria de mídia em breve!')),
+      const SnackBar(content: Text('Galeria de mÃ­dia em breve!')),
     );
   }
 
   void _showConversationInfo() {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Informações da conversa em breve!')),
+      const SnackBar(content: Text('InformaÃ§Ãµes da conversa em breve!')),
     );
   }
 }

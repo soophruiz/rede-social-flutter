@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../app_state.dart';
@@ -44,7 +45,7 @@ class _FeedPageState extends State<FeedPage> {
                 child: _buildCreatePost(user, state),
               ),
 
-              // Sugestões de usuários
+              // SugestÃµes de usuÃ¡rios
               if (suggestions.isNotEmpty)
                 SliverToBoxAdapter(
                   child: _buildSuggestions(suggestions, state),
@@ -55,7 +56,7 @@ class _FeedPageState extends State<FeedPage> {
                 const SliverFillRemaining(
                   child: Center(
                     child: Text(
-                      'Nenhum post encontrado.\nSiga pessoas para ver conteúdo!',
+                      'Nenhum post encontrado.\nSiga pessoas para ver conteÃºdo!',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: Colors.grey),
                     ),
@@ -110,7 +111,7 @@ class _FeedPageState extends State<FeedPage> {
               child: TextField(
                 controller: _postController,
                 decoration: InputDecoration(
-                  hintText: 'No que você está pensando?',
+                  hintText: 'No que vocÃª estÃ¡ pensando?',
                   hintStyle: TextStyle(color: Colors.grey[500]),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24),
@@ -143,7 +144,7 @@ class _FeedPageState extends State<FeedPage> {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
-              'Sugestões para você',
+              'SugestÃµes para vocÃª',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

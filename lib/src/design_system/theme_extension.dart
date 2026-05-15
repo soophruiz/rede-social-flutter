@@ -1,5 +1,6 @@
+﻿// Thomas e Sophia DEVB
 /// Theme Extensions
-/// Extensões de tema para variáveis customizadas
+/// ExtensÃµes de tema para variÃ¡veis customizadas
 
 import 'package:flutter/material.dart';
 
@@ -67,3 +68,4 @@ class AppThemeExtension extends ThemeExtension<AppThemeExtension> {
     cardGradientEnd: Color(0xFF6C63FF),
   );
 }
+

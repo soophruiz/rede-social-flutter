@@ -1,5 +1,6 @@
+﻿// Thomas e Sophia DEVB
 /// Design System Spacing
-/// Escalas de espaçamento consistentes
+/// Escalas de espaÃ§amento consistentes
 
 import 'package:flutter/material.dart';
 
@@ -71,3 +72,4 @@ abstract class AppShadows {
         ),
       ];
 }
+

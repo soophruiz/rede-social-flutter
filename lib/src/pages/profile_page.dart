@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -48,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
     if (viewedUser == null) {
       return Center(
         child: Text(
-          'Usuário não encontrado.',
+          'UsuÃ¡rio nÃ£o encontrado.',
           style: AppTypography.bodyLg,
         ),
       );
@@ -199,7 +200,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         maxLines: 3,
                         style: AppTypography.bodyMd,
                         decoration: InputDecoration(
-                          labelText: 'Bio / Descrição',
+                          labelText: 'Bio / DescriÃ§Ã£o',
                           prefixIcon: const Icon(Icons.info_outline),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(AppSpacing.md),
@@ -217,14 +218,14 @@ class _ProfilePageState extends State<ProfilePage> {
                             );
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
-                                content: const Text('Perfil atualizado com sucesso! ✨'),
+                                content: const Text('Perfil atualizado com sucesso! âœ¨'),
                                 backgroundColor: AppColors.success,
                                 duration: const Duration(seconds: 2),
                               ),
                             );
                           },
                           icon: const Icon(Icons.save_outlined),
-                          label: const Text('Salvar Alterações'),
+                          label: const Text('Salvar AlteraÃ§Ãµes'),
                         ),
                       ),
                       const SizedBox(height: AppSpacing.lg),
@@ -252,7 +253,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Publicações de ${viewedUser.name}', style: AppTypography.headingMd),
+                      Text('PublicaÃ§Ãµes de ${viewedUser.name}', style: AppTypography.headingMd),
                       const SizedBox(height: AppSpacing.lg),
                       ...profilePosts.map((post) {
                         return Card(
@@ -281,7 +282,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg),
                           child: Text(
-                            'Nenhuma publicação ainda.',
+                            'Nenhuma publicaÃ§Ã£o ainda.',
                             style: AppTypography.bodyMd.copyWith(color: AppColors.textLightSecondary),
                           ),
                         ),
@@ -305,3 +306,4 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+

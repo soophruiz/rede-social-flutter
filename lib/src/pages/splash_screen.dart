@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Conectando você à comunidade.',
+              'Conectando vocÃª Ã  comunidade.',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: isDark ? const Color(0xFFB0B0B0) : const Color(0xFF636E72),
                   ),
@@ -78,3 +79,4 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
+

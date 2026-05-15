@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -52,7 +53,7 @@ class _SearchPageState extends State<SearchPage> {
               controller: _controller,
               onChanged: _onSearchChanged,
               decoration: InputDecoration(
-                hintText: 'Buscar usuários ou posts...',
+                hintText: 'Buscar usuÃ¡rios ou posts...',
                 prefixIcon: const Icon(Icons.search_rounded),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppSpacing.md),
@@ -74,7 +75,7 @@ class _SearchPageState extends State<SearchPage> {
               )
             else ...[
               if (users.isNotEmpty) ...[
-                Text('Usuários', style: AppTypography.headingMd),
+                Text('UsuÃ¡rios', style: AppTypography.headingMd),
                 const SizedBox(height: AppSpacing.sm),
                 Expanded(
                   child: ListView.separated(
@@ -192,3 +193,4 @@ class _SearchPageState extends State<SearchPage> {
     );
   }
 }
+

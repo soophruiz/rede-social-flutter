@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 
 // ============ MODELOS ============
@@ -341,21 +342,21 @@ class AppState extends ChangeNotifier {
 
   void _initializeMockData() {
     _users = [
-      UserModel(id: '1', name: 'João Silva', email: 'joao@email.com', bio: 'Desenvolvedor Flutter'),
+      UserModel(id: '1', name: 'JoÃ£o Silva', email: 'joao@email.com', bio: 'Desenvolvedor Flutter'),
       UserModel(id: '2', name: 'Maria Santos', email: 'maria@email.com', bio: 'Designer UX/UI'),
       UserModel(id: '3', name: 'Pedro Costa', email: 'pedro@email.com', bio: 'Full Stack Developer'),
     ];
 
     _posts = [
       Post(
-        id: 'post1', userId: '1', userName: 'João Silva',
-        content: 'Acabei de finalizar um projeto incrível em Flutter! 🚀',
+        id: 'post1', userId: '1', userName: 'JoÃ£o Silva',
+        content: 'Acabei de finalizar um projeto incrÃ­vel em Flutter! ðŸš€',
         timestamp: DateTime.now().subtract(const Duration(hours: 2)),
         likes: ['2'],
         comments: [
           Comment(
             id: 'comment1', userId: '2', userName: 'Maria Santos',
-            content: 'Parabéns! Ficou muito bom!',
+            content: 'ParabÃ©ns! Ficou muito bom!',
             timestamp: DateTime.now().subtract(const Duration(hours: 1)),
           ),
         ],
@@ -372,13 +373,13 @@ class AppState extends ChangeNotifier {
     _conversations = [
       Conversation(
         id: 'conv1', title: 'Maria Santos',
-        subtitle: 'Você: Até amanhã! 👋',
+        subtitle: 'VocÃª: AtÃ© amanhÃ£! ðŸ‘‹',
         isOnline: true,
         lastMessageTime: DateTime.now().subtract(const Duration(minutes: 30)),
         messages: [
           Message(
             id: 'msg1', senderId: 'me', senderName: 'Eu',
-            text: 'Até amanhã! 👋',
+            text: 'AtÃ© amanhÃ£! ðŸ‘‹',
             timestamp: DateTime.now().subtract(const Duration(minutes: 30)),
             mine: true, isRead: false,
           ),
@@ -394,13 +395,13 @@ class AppState extends ChangeNotifier {
       ),
       NotificationItem(
         id: 'notif2', type: 'follow', fromUserName: 'Ana Oliveira',
-        content: 'começou a seguir você',
+        content: 'comeÃ§ou a seguir vocÃª',
         timestamp: DateTime.now().subtract(const Duration(days: 1)),
       ),
     ];
   }
 
-  // AUTENTICAÇÃO
+  // AUTENTICAÃ‡ÃƒO
   Future<bool> login(String email, String password) async {
     await Future.delayed(const Duration(seconds: 1));
     if (email.length >= 3 && password.length >= 3) {
@@ -440,7 +441,7 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  // USUÁRIOS
+  // USUÃRIOS
   UserModel? getUserById(String userId) {
     try {
       return _users.firstWhere((u) => u.id == userId);
@@ -571,7 +572,7 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  // NOTIFICAÇÕES
+  // NOTIFICAÃ‡Ã•ES
   void markNotificationRead(String notificationId) {
     final index = _notifications.indexWhere((n) => n.id == notificationId);
     if (index == -1) return;
@@ -604,7 +605,7 @@ class AppState extends ChangeNotifier {
     final updatedMessages = List<Message>.from(conversation.messages)..add(newMessage);
     _conversations[conversationIndex] = conversation.copyWith(
       messages: updatedMessages,
-      subtitle: 'Você: $text',
+      subtitle: 'VocÃª: $text',
       lastMessageTime: DateTime.now(),
     );
     notifyListeners();

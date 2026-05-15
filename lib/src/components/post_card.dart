@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 /// Post Card Component
 /// Card de postagem com bordas arredondadas, padding e sombra premium
 
@@ -135,7 +136,7 @@ class PostCard extends StatelessWidget {
                   style: Theme.of(context).textTheme.labelMedium,
                 ),
                 Text(
-                  '$comments comentários',
+                  '$comments comentÃ¡rios',
                   style: Theme.of(context).textTheme.labelMedium,
                 ),
               ],
@@ -179,11 +180,11 @@ class PostCard extends StatelessWidget {
     if (difference.inMinutes < 1) {
       return 'Agora';
     } else if (difference.inMinutes < 60) {
-      return '${difference.inMinutes}m atrás';
+      return '${difference.inMinutes}m atrÃ¡s';
     } else if (difference.inHours < 24) {
-      return '${difference.inHours}h atrás';
+      return '${difference.inHours}h atrÃ¡s';
     } else if (difference.inDays < 7) {
-      return '${difference.inDays}d atrás';
+      return '${difference.inDays}d atrÃ¡s';
     } else {
       return '${time.day}/${time.month}/${time.year}';
     }
@@ -234,3 +235,4 @@ class _ActionButton extends StatelessWidget {
     );
   }
 }
+

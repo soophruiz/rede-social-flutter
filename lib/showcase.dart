@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 // Design System Components Showcase
 // Exemplos de uso de todos os componentes do Design System
 
@@ -47,14 +48,14 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Seção de Buttons
+            // SeÃ§Ã£o de Buttons
             Text(
-              'Botões',
+              'BotÃµes',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: AppSpacing.md),
             PrimaryButton(
-              label: 'Botão Primário',
+              label: 'BotÃ£o PrimÃ¡rio',
               onPressed: () {
                 setState(() => _isLoadingButton = true);
                 Future.delayed(const Duration(seconds: 2), () {
@@ -83,7 +84,7 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
             ),
             const SizedBox(height: AppSpacing.xxl),
 
-            // Seção de Inputs
+            // SeÃ§Ã£o de Inputs
             Text(
               'Campos de Entrada',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -96,7 +97,7 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
               validator: (value) => 
-                value?.isEmpty ?? true ? 'E-mail obrigatório' : null,
+                value?.isEmpty ?? true ? 'E-mail obrigatÃ³rio' : null,
             ),
             const SizedBox(height: AppSpacing.lg),
             CustomTextInput(
@@ -106,11 +107,11 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
               controller: _passwordController,
               obscureText: true,
               validator: (value) => 
-                value?.isEmpty ?? true ? 'Senha obrigatória' : null,
+                value?.isEmpty ?? true ? 'Senha obrigatÃ³ria' : null,
             ),
             const SizedBox(height: AppSpacing.xxl),
 
-            // Seção de Glass Card
+            // SeÃ§Ã£o de Glass Card
             Text(
               'Glass Card (Glassmorphism)',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -126,7 +127,7 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
                   ),
                   const SizedBox(height: AppSpacing.sm),
                   Text(
-                    'Este é um card com efeito glassmorphism, usando BackdropFilter para criar um visual de vidro fosco moderno.',
+                    'Este Ã© um card com efeito glassmorphism, usando BackdropFilter para criar um visual de vidro fosco moderno.',
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
@@ -134,9 +135,9 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
             ),
             const SizedBox(height: AppSpacing.xxl),
 
-            // Seção de Avatars
+            // SeÃ§Ã£o de Avatars
             Text(
-              'Avatares de Usuário',
+              'Avatares de UsuÃ¡rio',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: AppSpacing.md),
@@ -148,7 +149,7 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
                   Column(
                     children: [
                       UserAvatar(
-                        imageUrl: 'https://ui-avatars.com/api/?name=João+Silva&background=6C63FF&color=ffffff',
+                        imageUrl: 'https://ui-avatars.com/api/?name=JoÃ£o+Silva&background=6C63FF&color=ffffff',
                         initials: 'JS',
                         size: AvatarSize.xs,
                       ),
@@ -206,16 +207,16 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
             ),
             const SizedBox(height: AppSpacing.xxl),
 
-            // Seção de Post Card
+            // SeÃ§Ã£o de Post Card
             Text(
               'Card de Postagem',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: AppSpacing.md),
             PostCard(
-              authorName: 'João Silva',
-              authorAvatar: 'https://ui-avatars.com/api/?name=João+Silva&background=6C63FF&color=ffffff',
-              content: 'Este é um exemplo de postagem no Design System. Os cards possuem efeito de sombra suave e bordas arredondadas para uma aparência moderna e minimalista.',
+              authorName: 'JoÃ£o Silva',
+              authorAvatar: 'https://ui-avatars.com/api/?name=JoÃ£o+Silva&background=6C63FF&color=ffffff',
+              content: 'Este Ã© um exemplo de postagem no Design System. Os cards possuem efeito de sombra suave e bordas arredondadas para uma aparÃªncia moderna e minimalista.',
               imageUrl: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=240&fit=crop',
               timestamp: DateTime.now().subtract(const Duration(hours: 2)),
               likes: 156,
@@ -225,7 +226,7 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
                 const SnackBar(content: Text('Curtido!')),
               ),
               onComment: () => ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Abrir comentários')),
+                const SnackBar(content: Text('Abrir comentÃ¡rios')),
               ),
               onShare: () => ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('Compartilhar')),
@@ -233,7 +234,7 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
             ),
             const SizedBox(height: AppSpacing.xxl),
 
-            // Seção de Cores
+            // SeÃ§Ã£o de Cores
             Text(
               'Paleta de Cores',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -243,9 +244,9 @@ class _DesignSystemShowcaseState extends State<DesignSystemShowcase> {
               spacing: AppSpacing.md,
               runSpacing: AppSpacing.md,
               children: [
-                _ColorTile('Primário', AppColors.primary),
-                _ColorTile('Primário Dark', AppColors.primaryDark),
-                _ColorTile('Secundário', AppColors.secondary),
+                _ColorTile('PrimÃ¡rio', AppColors.primary),
+                _ColorTile('PrimÃ¡rio Dark', AppColors.primaryDark),
+                _ColorTile('SecundÃ¡rio', AppColors.secondary),
                 _ColorTile('Sucesso', AppColors.success),
                 _ColorTile('Erro', AppColors.error),
                 _ColorTile('Aviso', AppColors.warning),
@@ -295,3 +296,4 @@ class _ColorTile extends StatelessWidget {
     );
   }
 }
+

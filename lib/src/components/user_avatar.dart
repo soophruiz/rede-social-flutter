@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 /// User Avatar Component
 /// Avatar elegante com status online opcional
 
@@ -83,3 +84,4 @@ class UserAvatar extends StatelessWidget {
     );
   }
 }
+

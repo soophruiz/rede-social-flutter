@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import '../design_system/colors.dart';
 import '../design_system/typography.dart';
@@ -49,7 +50,7 @@ class _CommentDialogWidgetState extends State<CommentDialogWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Adicionar comentário',
+              'Adicionar comentÃ¡rio',
               style: AppTypography.headingMd,
             ),
             const SizedBox(height: AppSpacing.lg),
@@ -59,7 +60,7 @@ class _CommentDialogWidgetState extends State<CommentDialogWidget> {
               maxLines: 4,
               maxLength: 500,
               decoration: InputDecoration(
-                hintText: 'O que você pensa sobre esta postagem?',
+                hintText: 'O que vocÃª pensa sobre esta postagem?',
                 hintStyle: AppTypography.bodyMd.copyWith(
                   color: isDark
                       ? AppColors.textDarkSecondary
@@ -134,3 +135,4 @@ class _CommentDialogWidgetState extends State<CommentDialogWidget> {
     );
   }
 }
+

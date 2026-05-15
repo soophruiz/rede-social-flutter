@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -43,17 +44,17 @@ class _LoginScreenState extends State<LoginScreen> {
     } else {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Credenciais inválidas. Tente novamente.')),
+        const SnackBar(content: Text('Credenciais invÃ¡lidas. Tente novamente.')),
       );
     }
   }
 
   String? _validateEmail(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Digite um e-mail válido';
+      return 'Digite um e-mail vÃ¡lido';
     }
     if (!value.contains('@')) {
-      return 'Insira um endereço de e-mail.';
+      return 'Insira um endereÃ§o de e-mail.';
     }
     return null;
   }
@@ -90,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: 12),
               const Text(
-                'Conexão Global para compartilhamento e interação.',
+                'ConexÃ£o Global para compartilhamento e interaÃ§Ã£o.',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Color(0xFF475569)),
               ),
@@ -174,3 +175,4 @@ strokeWidth: 2, color: Colors.white),
     );
   }
 }
+

@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 /// Glass Card Component
 /// Card com efeito Glassmorphism (vidro fosco)
 
@@ -56,3 +57,4 @@ class GlassCard extends StatelessWidget {
     );
   }
 }
+

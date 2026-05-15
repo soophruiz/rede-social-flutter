@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -46,7 +47,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     } else {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Já existe um usuário com este e-mail.')),
+        const SnackBar(content: Text('JÃ¡ existe um usuÃ¡rio com este e-mail.')),
       );
     }
   }
@@ -60,10 +61,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   String? _validateEmail(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Digite um e-mail válido.';
+      return 'Digite um e-mail vÃ¡lido.';
     }
     if (!value.contains('@')) {
-      return 'Insira um endereço de e-mail.';
+      return 'Insira um endereÃ§o de e-mail.';
     }
     return null;
   }
@@ -160,3 +161,4 @@ class _RegisterScreenState extends State<RegisterScreen> {
     );
   }
 }
+

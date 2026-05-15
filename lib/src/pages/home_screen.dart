@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import '../design_system/colors.dart';
 
@@ -29,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     'Feed',
     'Explorar',
     'Mensagens',
-    'Notificações',
+    'NotificaÃ§Ãµes',
     'Perfil',
   ];
 
@@ -81,3 +82,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+

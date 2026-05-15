@@ -1,5 +1,6 @@
+﻿// Thomas e Sophia DEVB
 /// Primary Button with Gradient
-/// Botão primário com gradiente e sombra suave
+/// BotÃ£o primÃ¡rio com gradiente e sombra suave
 
 import 'package:flutter/material.dart';
 import '../design_system/colors.dart';
@@ -107,3 +108,4 @@ class _PrimaryButtonState extends State<PrimaryButton> {
     );
   }
 }
+

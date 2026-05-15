@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 /// App Theme Configuration
 /// Define os temas claro e escuro do app com Material 3
 
@@ -428,3 +429,4 @@ class AppTheme {
     );
   }
 }
+

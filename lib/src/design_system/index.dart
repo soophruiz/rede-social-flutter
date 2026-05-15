@@ -1,5 +1,6 @@
+﻿// Thomas e Sophia DEVB
 /// Design System Exports
-/// Importação centralizada de todos os tokens, temas e componentes
+/// ImportaÃ§Ã£o centralizada de todos os tokens, temas e componentes
 
 // Colors
 export 'colors.dart';
@@ -13,3 +14,4 @@ export 'spacing.dart';
 // Theme
 export 'theme.dart';
 export 'theme_extension.dart';
+

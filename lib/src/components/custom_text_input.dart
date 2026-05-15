@@ -1,5 +1,6 @@
+﻿// Thomas e Sophia DEVB
 /// Custom Text Input Field
-/// Campo de input com bordas suaves e ícones personalizados
+/// Campo de input com bordas suaves e Ã­cones personalizados
 
 import 'package:flutter/material.dart';
 import '../design_system/colors.dart';
@@ -190,3 +191,4 @@ class _CustomTextInputState extends State<CustomTextInput> {
     );
   }
 }
+

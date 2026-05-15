@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
@@ -19,7 +20,7 @@ class NotificationsPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text(
-                'Notificações',
+                'NotificaÃ§Ãµes',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
@@ -35,7 +36,7 @@ class NotificationsPage extends StatelessWidget {
         ),
         Expanded(
           child: notifications.isEmpty
-              ? const Center(child: Text('Nenhuma notificação'))
+              ? const Center(child: Text('Nenhuma notificaÃ§Ã£o'))
               : ListView.builder(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   itemCount: notifications.length,
@@ -126,11 +127,11 @@ class NotificationsPage extends StatelessWidget {
     if (difference.inDays > 7) {
       return DateFormat('dd/MM/yy').format(dateTime);
     } else if (difference.inDays > 0) {
-      return '${difference.inDays}d atrás';
+      return '${difference.inDays}d atrÃ¡s';
     } else if (difference.inHours > 0) {
-      return '${difference.inHours}h atrás';
+      return '${difference.inHours}h atrÃ¡s';
     } else if (difference.inMinutes > 0) {
-      return '${difference.inMinutes}min atrás';
+      return '${difference.inMinutes}min atrÃ¡s';
     } else {
       return 'Agora mesmo';
     }

@@ -1,3 +1,4 @@
+﻿// Thomas e Sophia DEVB
 /// Design System Typography
 /// Estilos de texto usando Google Fonts Poppins
 
@@ -5,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 abstract class AppTypography {
-  // Títulos
+  // TÃ­tulos
   static TextStyle get headingXl => GoogleFonts.poppins(
         fontSize: 32,
         fontWeight: FontWeight.w600,
@@ -80,3 +81,4 @@ abstract class AppTypography {
         letterSpacing: 0.5,
       );
 }
+
